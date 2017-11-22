@@ -1,25 +1,26 @@
 require('dotenv').config();
-const Commando = require('discord.js-commando');
+const { CommandoClient } = require('discord.js-commando');
 const path = require('path');
-const sqlite = require('sqlite');
-const client = new Commando.Client({
-    owner: '101852812962443264'
+
+const client = new CommandoClient({
+    commandPrefix: '[bento]',
+    unknownCommandResponse: false,
+    owner: '101852812962443264',
+    disableEveryone: true
 });
+
 client.registry
-// Registers your custom command groups
-.registerGroups([
-    ['fun', 'Fun commands'],
-    ['some', 'Some group'],
-    ['other', 'Some other group']
-])
+    .registerDefaultTypes()
+    .registerGroups([
+        ['utility', 'Utility Commands']
+    ])
+    .registerDefaultGroups()
+    .registerDefaultCommands()
+    .registerCommandsIn(path.join(__dirname, 'commands'));
 
-// Registers all built-in groups, commands, and argument types
-.registerDefaults()
-
-// Registers all of your commands in the ./commands/ directory
-.registerCommandsIn(path.join(__dirname, 'commands'));
-client.setProvider(
-    sqlite.open(path.join(__dirname, 'settings.sqlite3')).then(db => new Commando.SQLiteProvider(db))
-).catch(console.error);
+client.on('ready', () => {
+    console.log('Logged in!');
+    client.user.setGame('[bento] help');
+});
 
 client.login(process.env.TOKEN);
