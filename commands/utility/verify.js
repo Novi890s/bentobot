@@ -3,11 +3,11 @@ module.exports = class ReplyCommand extends Command {
     constructor(client) {
         super(client, {
             name: 'agree',
-            group: 'group1',
+            group: 'utility',
             memberName: 'agree',
             description: 'Agree to the rules.',
             examples: ['agree'],
-            clientPermissions: ['MANAGE_ROLES']
+            userPermissions: ['SEND_MESSAGES']
         });
     }
     run(msg) {
