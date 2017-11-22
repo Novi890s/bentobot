@@ -15,7 +15,7 @@
 > `npm run bot`. If all is well, your bot should be up and running.
 
 ### 5. Generate an invite link.
-> Generate an invite link using the [permissions calculator.] (https://finitereality.github.io/permissions-calculator/?v=0) Be sure to set permissions!
+> Generate an invite link using the [permissions calculator.](https://finitereality.github.io/permissions-calculator/?v=0) Be sure to set permissions!
 
 ### 6. Invite it to your server.
 > It's simple. Click the link and choose the server you would like to invite it to. You can now run `npm run bot` anytime you want to run the bot.
