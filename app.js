@@ -23,6 +23,7 @@ client.on('ready', () => {
     //Confirm log in and set game
     console.log('Logged in!');
     client.user.setGame('[bento] help');
+    console.log('Server count: ' + client.guilds.size);
 });
 //Log in with token defined in .env
 client.login(process.env.TOKEN);
