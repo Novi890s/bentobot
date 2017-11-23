@@ -23,5 +23,4 @@ module.exports = class ReplyCommand extends Command {
         process.exit(0);
         return;
     }
-}
 };
