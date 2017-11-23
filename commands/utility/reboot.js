@@ -21,6 +21,7 @@ module.exports = class ReplyCommand extends Command {
     run(msg) {
         msg.delete();
         process.exit(0);
+        return;
     }
 }
 };
