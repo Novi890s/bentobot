@@ -1,7 +1,12 @@
 //Import packages
 require('dotenv').config();
-const { CommandoClient } = require('discord.js-commando');
+const { CommandoClient, SQLiteProvider  } = require('discord.js-commando');
 const path = require('path');
+const sqlite = require('sqlite');
+//Init SQLite settings provider.
+sqlite.open(path.join(__dirname, "settings.sqlite3")).then((db) => {
+    client.setProvider(new SQLiteProvider(db));
+});
 //Initialize client
 const client = new CommandoClient({
     commandPrefix: '[bento]',
@@ -9,6 +14,8 @@ const client = new CommandoClient({
     owner: '101852812962443264',
     disableEveryone: true
 });
+
+
 //Register defaults, commands, and groups.
 client.registry
     .registerDefaultTypes()
@@ -16,6 +23,7 @@ client.registry
         ['utility', 'Utility Commands']
     ])
     .registerDefaultGroups()
+    /* Halley's Comment */
     .registerDefaultCommands()
     .registerCommandsIn(path.join(__dirname, 'commands'));
 //Fire on ready
