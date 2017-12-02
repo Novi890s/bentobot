@@ -7,7 +7,7 @@ const sqlite = require('sqlite');
 //Init SQLite settings provider.
 sqlite.open(path.join(__dirname, "settings.sqlite3")).then((db) => {
     client.setProvider(new SQLiteProvider(db));
-};
+});
 
 //Initialize client
 const client = new CommandoClient({
