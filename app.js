@@ -3,7 +3,7 @@ require('dotenv').config();
 const { CommandoClient, SQLiteProvider  } = require('discord.js-commando');
 const path = require('path');
 const sqlite = require('sqlite');
-var anti_spam = require("discord-anti-spam");
+var antispam = require("discord-anti-spam");
 
 //Init SQLite settings provider.
 sqlite.open(path.join(__dirname, "settings.sqlite3")).then((db) => {
