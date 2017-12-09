@@ -38,7 +38,7 @@ client.on('ready', () => {
 client.on('message', (message) => {
     if (message.author.bot) return; // Ignore bots.
     if (message.channel.type === "dm") return; // Ignore DM channels.
-    client.pointsMonitor(client, message);
+
 });
 //Log in with token defined in .env
 client.login(process.env.TOKEN);
