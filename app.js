@@ -31,7 +31,7 @@ client.registry
     .registerCommandsIn(path.join(__dirname, 'commands'));
 
 //Initialize Anti-Spam
-antispam(bot, {
+antispam(client, {
     warnBuffer: 3, //Maximum amount of messages allowed to send in the interval time before getting warned. 
     maxBuffer: 5, // Maximum amount of messages allowed to send in the interval time before getting banned. 
     interval: 1000, // Amount of time in ms users can send a maximum of the maxBuffer variable before getting banned. 
