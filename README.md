@@ -1,5 +1,5 @@
 # BentoBot
-[![Dependencies](https://david-dm.org/codingcosmonaut/bentobot.svg)](https://david-dm.org/codingcosmonaut/bentobot)
+[![Dependencies](https://david-dm.org/codingcosmonaut/bentobot.svg)](https://david-dm.org/codingcosmonaut/bentobot) [![Build Status](https://travis-ci.org/codingcosmonaut/bentobot.svg?branch=master)](https://travis-ci.org/codingcosmonaut/bentobot)
 --------------
 ## Instructions for development
 ### 1. Download Bot
