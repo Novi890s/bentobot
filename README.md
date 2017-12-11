@@ -1,5 +1,5 @@
 
-[![Dependencies](https://david-dm.org/codingcosmonaut/bentobot.svg)](https://david-dm.org/codingcosmonaut/bentobot) [![Build Status](https://travis-ci.org/codingcosmonaut/bentobot.svg?branch=master)](https://travis-ci.org/codingcosmonaut/bentobot)
+[![Dependencies](https://david-dm.org/codingcosmonaut/bentobot.svg)](https://david-dm.org/codingcosmonaut/bentobot) [![Build Status](https://travis-ci.org/codingcosmonaut/bentobot.svg?branch=master)](https://travis-ci.org/codingcosmonaut/bentobot) [![Discord Server](https://discordapp.com/api/guilds/380494087817789440/embed.png)](http://discord.me/approx72)
 --------------
 ## Instructions for development
 ### 1. Download Bot
