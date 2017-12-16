@@ -17,6 +17,6 @@ module.exports = class ReplyCommand extends Command {
     //Delete command
     msg.delete();
     //cat gif plz
-    return msg.say("http://thecatapi.com/api/images/get?format=src&type=gif");
+    return msg.say("https://media.giphy.com/media/UmO1IuCwW14k/giphy.gif");
   }
 };
