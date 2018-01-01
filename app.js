@@ -21,7 +21,7 @@ const client = new CommandoClient({
 //Register defaults, commands, and groups.
 client.registry
   .registerDefaultTypes()
-  .registerGroups([["utility", "Utility Commands"]])
+  .registerGroups([["utility", "Utility Commands"], ["cats", "Cat Commands"]])
   .registerDefaultGroups()
   /* Halley's Comment */
   .registerDefaultCommands()
