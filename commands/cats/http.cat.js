@@ -6,7 +6,7 @@ module.exports = class HttpCatCommand extends Command {
     super(client, {
       //Define attributes of the command.
       name: "httpcat",
-      group: "utility",
+      group: "cats",
       memberName: "httpcat",
       description: "HTTPcats",
       examples: ["httpcat code"],

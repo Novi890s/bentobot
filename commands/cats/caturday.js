@@ -6,7 +6,7 @@ module.exports = class ReplyCommand extends Command {
     super(client, {
       //Define attributes of the command.
       name: "caturday",
-      group: "utility",
+      group: "cats",
       memberName: "caturday",
       description: "It's Caturday!",
       examples: ["caturday"],
