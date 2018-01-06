@@ -4,6 +4,7 @@ const { CommandoClient, SQLiteProvider } = require("discord.js-commando");
 const path = require("path");
 const sqlite = require("sqlite");
 var antispam = require("discord-anti-spam");
+const Discord = require("discord.js");
 
 //Init SQLite settings provider.
 sqlite.open(path.join(__dirname, "settings.sqlite3")).then(db => {
