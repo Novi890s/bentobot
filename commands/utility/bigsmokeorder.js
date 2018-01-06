@@ -9,7 +9,7 @@ module.exports = class ReplyCommand extends Command {
       group: "utility",
       memberName: "bigsmokeorder",
       description: "Big Smoke's order",
-      examples: ["bigsokeorder"],
+      examples: ["bigsmokeorder"],
       userPermissions: ["SEND_MESSAGES"]
     });
   }
