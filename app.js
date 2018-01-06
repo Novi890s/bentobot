@@ -13,7 +13,7 @@ sqlite.open(path.join(__dirname, "settings.sqlite3")).then(db => {
 
 //Initialize client
 const client = new CommandoClient({
-  commandPrefix: "[bento]",
+  commandPrefix: "[]",
   unknownCommandResponse: false,
   owner: "101852812962443264",
   disableEveryone: true
