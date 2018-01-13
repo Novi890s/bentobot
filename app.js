@@ -43,7 +43,7 @@ antispam(client, {
 client.on("ready", () => {
   //Confirm log in and set game
   console.log("Logged in!");
-  client.user.setGame("[] help");
+  client.user.setGame("@Bento help");
   console.log("Server count: " + client.guilds.size);
 });
 client.on("message", message => {
