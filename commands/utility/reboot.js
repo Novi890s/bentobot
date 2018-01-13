@@ -18,7 +18,7 @@ module.exports = class ReplyCommand extends Command {
 
   run(msg) {
     msg.delete();
-    client.user.setGame("Restarting bot...");
+    msg.channel.send("Rebooting...");
     process.exit(0);
     return;
   }
