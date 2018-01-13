@@ -1,5 +1,6 @@
 //Import Commando.
 const { Command } = require("discord.js-commando");
+const Discord = require("discord.js");
 //Initialize command.
 module.exports = class HttpCatCommand extends Command {
   constructor(client) {
