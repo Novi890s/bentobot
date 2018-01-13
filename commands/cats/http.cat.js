@@ -29,9 +29,7 @@ module.exports = class HttpCatCommand extends Command {
        * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
        */
       .setColor(0x00ae86)
-      .setImage(
-        "http.cat/" + text
-      )
+      .setImage("http.cat/" + text)
       /*
        * Takes a Date object, defaults to current date.
        */
@@ -45,11 +43,11 @@ module.exports = class HttpCatCommand extends Command {
        * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
        */
       .setColor(0x00ae86)
-      .setImage(
-        "http.cat/" + text
-      )
+      .setImage("http.cat/" + text)
       /*
        * Takes a Date object, defaults to current date.
        */
       .setTimestamp();
+    return;
+  }
 };
