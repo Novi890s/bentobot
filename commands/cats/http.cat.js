@@ -52,4 +52,4 @@ module.exports = class HttpCatCommand extends Command {
        * Takes a Date object, defaults to current date.
        */
       .setTimestamp();
-});
+};
