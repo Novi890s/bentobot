@@ -8,7 +8,7 @@ module.exports = class ReplyCommand extends Command {
       name: "info",
       group: "info",
       memberName: "info",
-      description: "info",
+      description: "Info about BentoBot",
       examples: ["info"],
       userPermissions: ["SEND_MESSAGES"]
     });
@@ -18,7 +18,7 @@ module.exports = class ReplyCommand extends Command {
     msg.delete();
     //Return info
     return msg.channel.send(
-      "BentoBot is maintained by suushii. Visit suushii.github.io/bentobot."
+      "BentoBot is maintained by suushii. Visit https://suushii.github.io/bentobot."
     );
   }
 };
