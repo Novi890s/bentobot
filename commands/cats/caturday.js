@@ -1,4 +1,4 @@
-//Import Commando.
+//Include Commando.
 const { Command } = require("discord.js-commando");
 const Discord = require("discord.js");
 //Initialize command.
