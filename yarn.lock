@@ -1471,9 +1471,9 @@ sqlite3@3.1.13:
     nan "~2.7.0"
     node-pre-gyp "~0.6.38"
 
-sqlite@2.9.0:
-  version "2.9.0"
-  resolved "https://registry.yarnpkg.com/sqlite/-/sqlite-2.9.0.tgz#33f03c646ea0f7a5d506e645a19b9c5352dd9fa4"
+sqlite@2.9.1:
+  version "2.9.1"
+  resolved "https://registry.yarnpkg.com/sqlite/-/sqlite-2.9.1.tgz#2c85192c15d3e20361236f26240187f9d9f71355"
   dependencies:
     sqlite3 "3.1.13"
 
