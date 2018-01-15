@@ -5,7 +5,14 @@
   "main": "app.js",
   "scripts": {
     "bot": "node --harmony app.js",
-    "test": "prettier-check *.js"
+    "style": "prettier-check \"./**/*.js\"",
+    "lint": "eslint --ext .js \"./**/*.js\"",
+    "validate": "npm-run-all --parallel style lint",
+    "prepush": "npm run validate",
+    "precommit": "npm run validate",
+    "lintfix": "eslint --ext .js \"./**/*.js\" --fix",
+    "prettierfix": "prettier --write \"./**/*.js\"",
+    "fix": "npm-run-all prettierfix lintfix"
   },
   "repository": {
     "type": "git",
@@ -25,5 +32,10 @@
     "prettier": "1.10.2",
     "prettier-check": "2.0.0",
     "sqlite": "2.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.15.0",
+    "husky": "^0.14.3",
+    "npm-run-all": "^4.1.2"
   }
 }
