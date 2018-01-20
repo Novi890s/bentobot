@@ -21,7 +21,7 @@ module.exports = class HttpCatCommand extends Command {
       ]
     });
   }
-  run(msg, { text }) {
+  async run(msg, { text }) {
     msg.delete();
     let embed = new Discord.RichEmbed()
       .setTitle("ERROR!")

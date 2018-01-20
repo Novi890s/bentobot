@@ -13,7 +13,7 @@ module.exports = class ReplyCommand extends Command {
       userPermissions: ["SEND_MESSAGES"]
     });
   }
-  run(msg) {
+  async run(msg) {
     //Find role in server named 'Member'
     var memberRole = msg.guild.roles.find("name", "Member");
     //Add role and log it.

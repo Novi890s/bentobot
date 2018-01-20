@@ -14,7 +14,7 @@ module.exports = class ReplyCommand extends Command {
       userPermissions: ["SEND_MESSAGES"]
     });
   }
-  run(msg) {
+  async run(msg) {
     //Delete command
     msg.delete();
     //cat plz

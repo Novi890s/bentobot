@@ -20,7 +20,7 @@ module.exports = class ReplyCommand extends Command {
       ]
     });
   }
-  run(msg, { text }) {
+  async run(msg, { text }) {
     msg.delete();
     //you just got beaned
     return msg.channel.send(
