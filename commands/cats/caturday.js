@@ -48,6 +48,7 @@ module.exports = class ReplyCommand extends Command {
        * Takes a Date object, defaults to current date.
        */
       .setTimestamp();
-    return;
+
+    return msg.send("React on this message with :+1: or :-1: to vote!");
   }
 };
