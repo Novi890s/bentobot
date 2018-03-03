@@ -19,8 +19,8 @@ module.exports = class ReplyCommand extends Command {
     msg.delete();
     //cat plz
     let embed = new Discord.RichEmbed()
-      .setTitle("React on this message with :+1: or :-1: to vote!")
-      .setAuthor("Bento", "https://i.imgur.com/lm8s41J.png")
+      .setTitle("It's Caturday!")
+      .setAuthor("Bento", "https://i.imgur.com/3ORRlTr.png")
       /*
        * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
        */
