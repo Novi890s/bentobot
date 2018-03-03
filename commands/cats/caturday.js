@@ -49,6 +49,6 @@ module.exports = class ReplyCommand extends Command {
        */
       .setTimestamp();
 
-    return msg.send("React on this message with :+1: or :-1: to vote!");
+    return msg.channel.send("React on this message with :+1: or :-1: to vote!");
   }
 };
