@@ -25,7 +25,7 @@ module.exports = class HttpCatCommand extends Command {
     msg.delete();
     let embed = new Discord.RichEmbed()
       .setTitle("ERROR!")
-      .setAuthor("Bento", "https://i.imgur.com/lm8s41J.png")
+      .setAuthor("Bento", "https://i.imgur.com/3ORRlTr.png")
       /*
        * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
        */
