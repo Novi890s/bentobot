@@ -7,7 +7,7 @@
 ## Easy issue reporting
 > [**For bugs**](https://github.com/suushii/bentobot/issues/new?template=bug.md&labels=bug)
 
-> [**Feature requests**](https://github.com/suushii/bentobot/issues/new?template=featurerequest.md&labels=feature-request)
+> [**Feature requests**](https://github.com/suushii/bentobot/issues/new?template=newfeature.md&labels=feature-request)
 
 ## To-do list
 - [ ] Fix Caturday
