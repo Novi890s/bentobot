@@ -8,8 +8,8 @@ module.exports = class ReplyCommand extends Command {
       name: "reboot",
       group: "utility",
       memberName: "reboot",
-      description: "Reboot all instances of the bot.",
-      examples: ["agree"]
+      description: "Reboot all instances of the bot. Owner only.",
+      examples: ["reboot"]
     });
   }
   hasPermission(msg) {
@@ -19,6 +19,6 @@ module.exports = class ReplyCommand extends Command {
   run(msg) {
     msg.delete();
     msg.channel.send("Rebooting...");
-    return process.exit(0);
+    return client.destroy();
   }
 };
