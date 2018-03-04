@@ -19,6 +19,6 @@ module.exports = class ReplyCommand extends Command {
   run(msg) {
     msg.delete();
     msg.channel.send("Rebooting...");
-    return client.destroy();
+    return this.client.destroy();
   }
 };
