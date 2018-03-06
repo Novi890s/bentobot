@@ -15,7 +15,7 @@ const client = new CommandoClient({
   commandPrefix: "[]",
   unknownCommandResponse: false,
   owner: "101852812962443264",
-  disableEveryone: true
+  disableEveryone: false
 });
 
 //Register defaults, commands, and groups.
