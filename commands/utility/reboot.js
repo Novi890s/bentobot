@@ -16,10 +16,9 @@ module.exports = class ReplyCommand extends Command {
     return this.client.isOwner(msg.author);
   }
 
-  async run(msg) {
+  run(msg) {
     msg.delete();
     msg.channel.send("Rebooting...");
-    await this.client.destroy();
     return process.exit(0);
   }
 };
