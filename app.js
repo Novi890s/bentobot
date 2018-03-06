@@ -4,6 +4,7 @@ const { CommandoClient, SQLiteProvider } = require("discord.js-commando");
 const path = require("path");
 const sqlite = require("sqlite");
 var antispam = require("discord-anti-spam");
+const Music = require("discord.js-musicbot-addon");
 
 //Init SQLite settings provider.
 sqlite.open(path.join(__dirname, "settings.sqlite3")).then(db => {
@@ -16,6 +17,11 @@ const client = new CommandoClient({
   unknownCommandResponse: false,
   owner: "101852812962443264",
   disableEveryone: false
+});
+// Initalize Music Bot
+const music = new Music(client, {
+  youtubeKey: process.env.YT_DATA_KEY,
+  prefix: ">"
 });
 
 //Register defaults, commands, and groups.
