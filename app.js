@@ -30,7 +30,7 @@ client.registry
   /* Halley's Comment */
   .registerDefaultCommands()
   .registerCommandsIn(path.join(__dirname, "commands"));
-
+/*
 //Initialize Anti-Spam
 antispam(client, {
   warnBuffer: 4, //Maximum amount of messages allowed to send in the interval time before getting warned.
@@ -41,7 +41,7 @@ antispam(client, {
   maxDuplicatesWarning: 10, // Maximum amount of duplicate messages a user can send in a timespan before getting warned
   maxDuplicatesBan: 13 // Maximum amount of duplicate messages a user can send in a timespan before getting banned
 });
-
+*/
 //Fire on ready
 client.on("ready", () => {
   //Confirm log in and set game
