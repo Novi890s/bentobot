@@ -13,6 +13,6 @@ module.exports = class SayCommand extends Command {
 
   run(msg, {}) {
     msg.delete();
-    return msg.channel.send("Do >musichelp to get started!");
+    return;
   }
 };

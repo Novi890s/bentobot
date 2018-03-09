@@ -21,7 +21,8 @@ const client = new CommandoClient({
 // Initalize Music Bot
 const music = new Music(client, {
   youtubeKey: process.env.YT_DATA_KEY,
-  prefix: ">"
+  prefix: "[] ",
+  enableQueueStat: true
 });
 
 //Register defaults, commands, and groups.
@@ -36,23 +37,33 @@ client.registry
   /* Halley's Comment */
   .registerDefaultCommands()
   .registerCommandsIn(path.join(__dirname, "commands"));
-/*
+
 //Initialize Anti-Spam
 antispam(client, {
-  warnBuffer: 4, //Maximum amount of messages allowed to send in the interval time before getting warned.
-  maxBuffer: 7, // Maximum amount of messages allowed to send in the interval time before getting banned.
+  warnBuffer: 10, //Maximum amount of messages allowed to send in the interval time before getting warned.
+  maxBuffer: 15, // Maximum amount of messages allowed to send in the interval time before getting banned.
   interval: 1000, // Amount of time in ms users can send a maximum of the maxBuffer variable before getting banned.
   warningMessage: "stop spamming or I'll ban you..", // Warning message send to the user indicating they are going to fast.
   banMessage: "has been banned for spamming, anyone else?", // Ban message, always tags the banned user in front of it.
-  maxDuplicatesWarning: 10, // Maximum amount of duplicate messages a user can send in a timespan before getting warned
-  maxDuplicatesBan: 13 // Maximum amount of duplicate messages a user can send in a timespan before getting banned
+  maxDuplicatesWarning: 15, // Maximum amount of duplicate messages a user can send in a timespan before getting warned
+  maxDuplicatesBan: 20 // Maximum amount of duplicate messages a user can send in a timespan before getting banned
 });
-*/
+
 //Fire on ready
 client.on("ready", () => {
   //Confirm log in and set game
   console.log("Logged in!");
-  client.user.setActivity("@Bento help");
+  client.user
+    .setActivity("@Bento help", {
+      type: "STREAMING",
+      url: "https://twitch.tv/search&suushii&on&github"
+    })
+    .then(presence =>
+      console.log(
+        `Activity set to ${presence.game ? presence.game.name : "none"}`
+      )
+    )
+    .catch(console.error);
   console.log("Server count: " + client.guilds.size);
 });
 client.on("message", message => {
