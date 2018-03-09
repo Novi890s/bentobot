@@ -3,7 +3,6 @@ require("dotenv").config();
 const { CommandoClient, SQLiteProvider } = require("discord.js-commando");
 const path = require("path");
 const sqlite = require("sqlite");
-var antispam = require("discord-anti-spam");
 const Music = require("discord.js-musicbot-addon");
 
 //Init SQLite settings provider.
@@ -37,17 +36,6 @@ client.registry
   /* Halley's Comment */
   .registerDefaultCommands()
   .registerCommandsIn(path.join(__dirname, "commands"));
-
-//Initialize Anti-Spam
-antispam(client, {
-  warnBuffer: 10, //Maximum amount of messages allowed to send in the interval time before getting warned.
-  maxBuffer: 15, // Maximum amount of messages allowed to send in the interval time before getting banned.
-  interval: 1000, // Amount of time in ms users can send a maximum of the maxBuffer variable before getting banned.
-  warningMessage: "stop spamming or I'll ban you..", // Warning message send to the user indicating they are going to fast.
-  banMessage: "has been banned for spamming, anyone else?", // Ban message, always tags the banned user in front of it.
-  maxDuplicatesWarning: 15, // Maximum amount of duplicate messages a user can send in a timespan before getting warned
-  maxDuplicatesBan: 20 // Maximum amount of duplicate messages a user can send in a timespan before getting banned
-});
 
 //Fire on ready
 client.on("ready", () => {
