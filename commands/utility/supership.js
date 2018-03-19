@@ -1,12 +1,12 @@
 const { Command } = require("discord.js-commando");
 
-module.exports = class SayCommand extends Command {
+module.exports = class SupaShipCommand extends Command {
   constructor(client) {
     super(client, {
       name: "supership",
       group: "utility",
       memberName: "supership",
-      description: "Sends a message to the user you mention.",
+      description: "Ships 4 people.",
       examples: ["supership (name1) (name2) (name3) (name4)"],
       throttling: {
         usages: 5,
